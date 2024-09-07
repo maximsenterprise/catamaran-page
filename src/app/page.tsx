@@ -27,7 +27,7 @@ export default function Home() {
     }
   };
 
-  const initialCode: string = `import Catamaran
+  const initialCode = `import Catamaran
 
 @Scaffold
 struct HelloWorld {
@@ -46,7 +46,7 @@ class MyApplication {
     }
 }`;
 
-  const sampleCode: string = `import Catamaran
+  const sampleCode = `import Catamaran
 
 @Scaffold
 struct MyView {
@@ -62,7 +62,7 @@ struct MyView {
     }
 }`;
 
-  const sampleCCode: string = `#include <windows.h>
+  const sampleCCode = `#include <windows.h>
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, 
         WPARAM wParam, LPARAM lParam) {
@@ -75,7 +75,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg,
     }
 }`;
 
-  const swiftCode: string = `import SwiftUI
+  const swiftCode = `import SwiftUI
 
 struct ContentView: View {
     var body: some View {
@@ -88,7 +88,7 @@ struct ContentView: View {
     }
 }`;
 
-    const sampleLinuxCode: string = `import Gtk
+    const sampleLinuxCode = `import Gtk
 
 let status = Application.run {
     let window = ApplicationWindowRef(application: $0)
@@ -104,7 +104,7 @@ let status = Application.run {
     window.showAll()
 }`;
     
-    const sampleComponentCode: string = `import Catamaran
+    const sampleComponentCode = `import Catamaran
 import AppKit
 
 @MacComponent
@@ -139,13 +139,13 @@ struct MyView {
           <div className="flex justify-start flex-row mt-7 flex-wrap">
             <div className="bg-accent p-5 rounded-lg">
               <h2 className="font-bold text-lg italic text-foreground flex-auto">A different render for each platform</h2>
-              <p className="text-foreground">Thanks to the power of Catamaran's rendering System, Catamaran can render a component in a variety of platforms, using their native technologies. Catamaran is based on three powerful APIs corresponding into the different platforms: <span className={styles.monospace}>SwiftUI</span>, <span className={styles.monospace}>windows.h</span> (in C++) and <span className={styles.monospace}>SwiftGTK</span></p>
+              <p className="text-foreground">Thanks to the power of Catamaran&apos;s rendering System, Catamaran can render a component in a variety of platforms, using their native technologies. Catamaran is based on three powerful APIs corresponding into the different platforms: <span className={styles.monospace}>SwiftUI</span>, <span className={styles.monospace}>windows.h</span> (in C++) and <span className={styles.monospace}>SwiftGTK</span></p>
             </div>
             <CodeBlock code={sampleCode}></CodeBlock>
 
             <div className="bg-accent p-5 rounded-lg mt-12">
               <h2 className="font-bold text-lg italic text-foreground flex-auto">Native macOS Implementations</h2>
-              <p className="text-foreground">Catamaran for macOS uses <span className={styles.monospace}>AppKit</span> and <span className={styles.monospace}>SwiftUI</span> for great integration with macOS. With both libraries, we can create the most amazing experience for the end user, following Apple's design rules.</p>
+              <p className="text-foreground">Catamaran for macOS uses <span className={styles.monospace}>AppKit</span> and <span className={styles.monospace}>SwiftUI</span> for great integration with macOS. With both libraries, we can create the most amazing experience for the end user, following Apple&apos;s design rules.</p>
             </div>
             <CodeBlock code={swiftCode}></CodeBlock>
 
@@ -163,7 +163,7 @@ struct MyView {
 
             <div className="bg-accent p-5 rounded-lg mt-12">
               <h2 className="font-bold text-lg italic text-foreground flex-auto">A wide range of Components</h2>
-              <p className="text-foreground">Catamaran offers a wide range of components from all of the different libraries, but you can create your own palletes with all the different ComponentTypes. Platform dependent, or independent, that's your decision.</p>
+              <p className="text-foreground">Catamaran offers a wide range of components from all of the different libraries, but you can create your own palletes with all the different ComponentTypes. Platform dependent, or independent, that&apos;s your decision.</p>
             </div>
             <CodeBlock code={sampleComponentCode}></CodeBlock>
           </div>

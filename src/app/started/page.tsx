@@ -5,7 +5,7 @@ import { navBar } from "../navbar";
 import { CodeBlock, CodeBlockBash } from "~/components/codeblock";
 
 export default function Home() {
-    const mainSwiftExample: string = `import Catamaran
+    const mainSwiftExample = `import Catamaran
 
 // Create a view which contains a TextComponent
 @Scaffold
@@ -57,7 +57,7 @@ class MyApplication {
     Package.swift`}/>
                 </div>
                 <p className="text-accent-foreground">
-                    Now let's create a simple Application with a window and a label. Open the <span className={styles.monospace}>Main.swift</span> file and add the following code:
+                    Now let&apos;s create a simple Application with a window and a label. Open the <span className={styles.monospace}>Main.swift</span> file and add the following code:
                 </p>
                 <div className="w-full mt-4 mb-4">
                     <CodeBlock code={mainSwiftExample}/>
@@ -75,9 +75,9 @@ class MyApplication {
                     <CodeBlockBash code={`catamaran bundle`}/>
                 </div>
                 <p className="text-accent-foreground">
-                    With that, you've created your first Catamaran Application! For more information, check out the <a href="/documentation" className="text-teal-600 italic">Documentation</a>.
+                    With that, you&apos;ve created your first Catamaran Application! For more information, check out the <a href="/documentation" className="text-teal-600 italic">Documentation</a>.
                     Remember that when bundling the application, it will generate the executable according to the platform you are running the command on.
-                    In macOS will generate a 'MyApplication.app' file, in Windows a 'MyApplication.exe' file and in Linux a 'MyApplication' file.
+                    In macOS will generate a &apos;MyApplication.app&apos; file, in Windows a &apos;MyApplication.exe&apos; file and in Linux a &apos;MyApplication&apos; file.
                 </p>
             </div>
             <Footer></Footer>

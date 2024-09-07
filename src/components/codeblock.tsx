@@ -1,18 +1,18 @@
 "use client";
 
 import React, {useEffect} from "react";
+import Prism from "prismjs";
+import "prismjs/components/prism-swift";
+import "~/styles/custom-prism-theme.css";
+import "prismjs/components/prism-c";
+import "prismjs/components/prism-bash";
 
 export interface CodeBlockProps {
     code: string;
   }
   
-  export const CodeBlock: React.FC<CodeBlockProps> = ({ code }) => {
-    var HTML = "";
+export const CodeBlock: React.FC<CodeBlockProps> = ({ code }) => {
     useEffect(() => {
-      const Prism = require('prismjs');
-      require('prismjs/components/prism-swift');
-      require('~/styles/custom-prism-theme.css');
-  
       Prism.highlightAll();
     }, []);
   
@@ -21,14 +21,10 @@ export interface CodeBlockProps {
         <code className="language-swift">{code}</code>
       </pre>
     );
-  };
+};
   
   export const CodeBlockCPP: React.FC<CodeBlockProps> = ({ code }) => {
-      var HTML = "";
       useEffect(() => {
-        const Prism = require('prismjs');
-        require('prismjs/components/prism-c');
-        require('~/styles/custom-prism-theme.css');
     
         Prism.highlightAll();
       }, []);
@@ -41,11 +37,7 @@ export interface CodeBlockProps {
     };
   
   export const CodeBlockBash: React.FC<CodeBlockProps> = ({ code }) => {
-      var HTML = "";
       useEffect(() => {
-        const Prism = require('prismjs');
-        require('prismjs/components/prism-bash');
-        require('~/styles/custom-prism-theme.css');
     
         Prism.highlightAll();
       }, []);
