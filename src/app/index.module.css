@@ -1,177 +1,32 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-image: linear-gradient(to bottom, #2e026d, #15162c);
+
+.navBar {
+    @apply bg-background/80 flex justify-between items-center p-4 w-fit h-16 z-50 fixed flex-row backdrop-blur-md mr-2 mt-2 ml-2 rounded-xl space-x-10 pr-10 pl-10 text-accent-foreground italic font-semibold shadow-md;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 4rem 1rem;
+.link {
+    @apply text-accent-foreground/70  hover:text-accent-foreground hover:transition-colors hover:cursor-pointer;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+.catamaran {
+    @apply italic font-extrabold text-xl bg-gradient-to-bl from-teal-600 to-teal-200 text-transparent bg-clip-text;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+.catamaran:hover {
+    @apply cursor-pointer;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url("/fonts/JetBrainsMono-Italic[wght].ttf") format("truetype")
+        url("/fonts/JetBrainsMono-Italic[wght].woff") format("woff");
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.title {
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  margin: 0;
-  color: white;
-}
-
-@media (min-width: 640px) {
-  .title {
-    font-size: 5rem;
-  }
-}
-
-.pinkSpan {
-  color: hsl(280 100% 70%);
-}
-
-.cardRow {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-@media (min-width: 640px) {
-  .cardRow {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 768px) {
-  .cardRow {
-    gap: 2rem;
-  }
-}
-
-.card {
-  max-width: 20rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  color: white;
-  background-color: rgb(255 255 255 / 0.1);
-}
-
-.card:hover {
-  background-color: rgb(255 255 255 / 0.2);
-  transition: background-color 150ms cubic-bezier(0.5, 0, 0.2, 1);
-}
-
-.cardTitle {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.cardText {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.showcaseContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.showcaseText {
-  color: white;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.authContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.loginButton {
-  border-radius: 9999px;
-  background-color: rgb(255 255 255 / 0.1);
-  padding: 0.75rem 2.5rem;
-  font-weight: 600;
-  color: white;
-  text-decoration-line: none;
-  transition: background-color 150ms cubic-bezier(0.5, 0, 0.2, 1);
-}
-
-.loginButton:hover {
-  background-color: rgb(255 255 255 / 0.2);
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.input {
-  width: 100%;
-  border-radius: 9999px;
-  padding: 0.5rem 1rem;
-  color: black;
-}
-
-.submitButton {
-  all: unset;
-  border-radius: 9999px;
-  background-color: rgb(255 255 255 / 0.1);
-  padding: 0.75rem 2.5rem;
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  transition: background-color 150ms cubic-bezier(0.5, 0, 0.2, 1);
-}
-
-.submitButton:hover {
-  background-color: rgb(255 255 255 / 0.2);
+.monospace {
+    font-family: 'JetBrains Mono';
+    background-color: lightgray;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 10px;
 }
