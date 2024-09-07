@@ -2,7 +2,7 @@
 import { Footer } from "../footer";
 import styles from "../index.module.css";
 import { navBar } from "../navbar";
-import { CodeBlock, CodeBlockBash } from "../page";
+import { CodeBlock, CodeBlockBash } from "~/components/codeblock";
 
 export default function Home() {
     const mainSwiftExample: string = `import Catamaran
