@@ -30,3 +30,15 @@
 .warning {
     @apply text-accent-foreground border-l-4 border-yellow-500 pl-5 bg-yellow-200 rounded-lg p-4 mb-5 w-full mt-4;
 }
+
+.instruction {
+    @apply text-accent-foreground border-l-4 border-blue-500 pl-5 bg-blue-200 rounded-lg p-4 mb-5 w-full mt-4;
+}
+
+.warningTitle {
+    @apply font-bold text-lg mb-1 text-yellow-600 opacity-80;
+}
+
+.instructionTitle {
+    @apply font-bold text-lg mb-1 text-blue-600 opacity-80;
+}

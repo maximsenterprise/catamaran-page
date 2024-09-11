@@ -4,7 +4,7 @@ import { type Metadata } from "next";
 export const metadata: Metadata = {
   title: "Catamaran",
   description: "A Swift Framework for Creating amazing native Desktop Applications",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/catamaran.ico" }],
 };
 
 export default function RootLayout({
