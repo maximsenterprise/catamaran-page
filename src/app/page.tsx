@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { navBar } from "./navbar";
+import { NavBar } from "./navbar";
 import styles from "./index.module.css";
 import { Footer } from "./footer";
 import { CodeBlock, CodeBlockCPP } from "~/components/codeblock";
@@ -128,7 +128,7 @@ struct MyView {
 
   return (
     <main className={`min-h-screen bg-background`}>
-      {navBar()}
+      {NavBar()}
       <div className="flex items-center flex-col justify-center pt-32 bg-clip-text bg-gradient-to-br from-teal-600 to-teal-300 text-transparent">
         <h1 className={`font-extrabold text-7xl mb-7`}>Catamaran</h1>
         <h3 className={`font-extrabold text-2xl mb-12`}>Create powerful native <i>Desktop Applications</i></h3>

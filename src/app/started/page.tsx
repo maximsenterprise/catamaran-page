@@ -1,7 +1,8 @@
+"use client";
 
 import { Footer } from "../footer";
 import styles from "../index.module.css";
-import { navBar } from "../navbar";
+import { NavBar } from "../navbar";
 import { CodeBlock, CodeBlockBash } from "~/components/codeblock";
 
 export default function Home() {
@@ -34,7 +35,7 @@ class MyApplication {
 }`;
     return (
         <main>
-            {navBar()}
+            {NavBar()}
             <div className="flex flex-wrap items-start flex-col justify-center pt-32 bg-clip-text bg-gradient-to-br from-teal-600 to-teal-300 text-transparent ml-16 mr-16 mb-10">
                 <h1 className={`font-extrabold text-5xl mb-5 italic`}>Getting Started</h1>
                 <hr className="w-full mb-5"></hr>

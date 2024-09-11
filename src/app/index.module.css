@@ -1,6 +1,10 @@
 
 .navBar {
-    @apply bg-background/80 flex justify-between items-center p-4 w-fit h-16 z-50 fixed flex-row backdrop-blur-md mr-2 mt-2 ml-2 rounded-xl space-x-10 pr-10 pl-10 text-accent-foreground italic font-semibold shadow-md;
+    @apply bg-background/80 flex justify-between items-center p-4 w-fit h-16 z-30 fixed flex-row backdrop-blur-md mr-2 mt-2 ml-2 rounded-xl space-x-10 pr-10 pl-10 text-accent-foreground italic font-semibold shadow-md;
+}
+
+.navBarDocs {
+    @apply bg-background/80 flex justify-between items-center p-4 w-fit h-16 z-30 fixed flex-row backdrop-blur-md mr-2 mt-2 ml-2 rounded-xl space-x-10 pr-10 pl-10 text-accent-foreground italic font-semibold shadow-md;
 }
 
 .link {
@@ -13,6 +17,18 @@
 
 .catamaran:hover {
     @apply cursor-pointer;
+}
+
+.catamaranDocs {
+    @apply italic font-extrabold text-xl bg-gradient-to-bl from-blue-700 to-blue-300 text-transparent bg-clip-text;
+}
+
+.catamaranDocs:hover {
+    @apply cursor-pointer;
+}
+
+.search {
+    @apply text-accent-foreground/70 bg-zinc-400 p-2 pr-4 pl-4 rounded-xl;
 }
 
 @font-face {
